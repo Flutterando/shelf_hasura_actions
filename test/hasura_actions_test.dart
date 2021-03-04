@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:shelf/shelf.dart';
-import 'package:shelf_hasura_actions/hasura_actions.dart';
+import 'package:shelf_hasura_actions/shelf_hasura_actions.dart';
 import 'package:test/test.dart';
 
 void main() {

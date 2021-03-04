@@ -1,6 +1,6 @@
 # shelf_shelf_hasura_actions
 
-Shelf Middleware for Hasura Action. See in [Hasura Action Doc](https://hasura.io/docs/latest/graphql/core/actions/index.html)
+Shelf Middleware for Hasura Action. See [Hasura Action Doc](https://hasura.io/docs/latest/graphql/core/actions/index.html)
 
 ## Usage
 

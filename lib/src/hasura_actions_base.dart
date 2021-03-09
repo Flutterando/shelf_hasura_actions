@@ -1,4 +1,3 @@
-//@dart=2.9
 import 'dart:async';
 import 'package:shelf/shelf.dart';
 
@@ -19,5 +18,9 @@ Future<Response> _hasuraActionProcess(Request request, Map<String, BindCallback>
   if (!actions.containsKey(action.actionName)) {
     throw Exception('Action ${action.actionName} not found');
   }
-  return await actions[action.actionName](action);
+  if (actions.containsKey(action.actionName)) {
+    return await actions[action.actionName]!(action);
+  } else {
+    throw Exception('Action don\'t exist');
+  }
 }

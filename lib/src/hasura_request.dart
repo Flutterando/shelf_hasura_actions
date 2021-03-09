@@ -9,7 +9,7 @@ class ActionRequest {
   final Map<String, dynamic> input;
   final Request request;
 
-  ActionRequest({@required this.actionName, @required this.sessionVariables, @required this.input, @required this.request});
+  ActionRequest({required this.actionName, required this.sessionVariables, required this.input, required this.request});
 
   factory ActionRequest.fromMap(Map<String, dynamic> map, Request request) {
     return ActionRequest(

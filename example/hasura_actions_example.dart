@@ -12,6 +12,6 @@ void main() async {
 }
 
 //my actions list
-const _actions = <String, BindCallback>{
+const _actions = <String, BindCallbackAction>{
   'bmiAction': bmi.calculateUseBmi,
 };

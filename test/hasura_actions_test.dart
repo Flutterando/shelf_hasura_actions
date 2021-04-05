@@ -5,7 +5,7 @@ import 'package:shelf_hasura_actions/shelf_hasura_actions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('get response', () async {
+  test('get response action', () async {
     final response = await hasuraActions(_actions)(Request('POST', Uri.http('localhost', '/'), body: jsonHasura));
 
     expect(response.statusCode, 200);
@@ -13,7 +13,7 @@ void main() {
   });
 }
 
-const _actions = <String, BindCallback>{
+const _actions = <String, BindCallbackAction>{
   'testAction': _myFunctionTest,
 };
 
